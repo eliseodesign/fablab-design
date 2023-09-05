@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle</title>
+</head>
+<style>
+.circulo {
+  position: fixed;
+  background: #2a2a2a;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.circulo::before,
+.circulo::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.circulo::before {
+  border: 3px solid #27280975;
+  border-top-color: rgb(225, 232, 41); 
+  width: 82%;
+  height: 82%;
+  bottom: 6%;
+  left: 6%;
+  animation: giro 2s linear infinite;
+}
+
+.circulo::after {
+  border: 5px solid #00000012;
+  bottom: 0;
+  border-bottom-color: rgb(65, 33, 192); 
+  width: 90%;
+  height: 90%;
+  animation: giro2 3s linear infinite;
+
+}
+
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes giro2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+
+
+
+</style>
+<body>
+
+  <div class="circulo"></div>
+  
+</body>
+</html>
