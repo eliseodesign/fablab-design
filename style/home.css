@@ -4,7 +4,7 @@ body{
 .main-header {
   height: 90vh;
   background: 
-    linear-gradient(#1e0e4ea1, #1e0e4ecc),
+    linear-gradient(#1e0e4eb4, #1e0e4e),
     url(../img/fablab_background.jpeg);
   background-size: cover;
   background-attachment: fixed;
@@ -90,6 +90,7 @@ body{
     gap: 0px;
 
     place-items: center;
+    gap: 1em;
   }
 
   .header-content h1{
@@ -97,6 +98,11 @@ body{
   }
 
   .header-content span{
+    line-height: 1.5;
     text-align: center;
+  }
+
+  .main-header p {
+    opacity: .6;
   }
 }
